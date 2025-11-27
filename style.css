@@ -154,8 +154,11 @@ body {
                 line-height: 28px;
                 width: 140px;
             }
-            .left {
+            .small-text {
                 max-width: 580px;
+            }
+            .left {
+                width: 100%;
             }
             .right {
                 display: flex;
@@ -194,7 +197,7 @@ body {
         padding: 16px 16px 15px 16px;
         width: calc((100% - 20px * 2) / 3);
         min-width: 280px;
-        min-height: 465px;
+        height: 465px;
         .img {
             background-size: cover;
             background-position: 50%;
@@ -205,9 +208,13 @@ body {
         .detail {
             background-color: #f5f5f5;
             padding: 0 8px;
+            min-height: 32px;
             width: 204px;
         }
         @media only screen and (max-width: 1100px) {
+            .price {
+                margin-top: 3px;
+            }
             .detail {
                 flex-direction: column;
                 width: 123px;
@@ -267,6 +274,9 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 9px;
+            }
+            .small {
+                max-width: 173px;
             }
             .box2 {
                 background-color: #f4fbf8;
@@ -435,7 +445,7 @@ body {
         align-items: center;
         border-radius: 4px;
         width: 278px;
-        min-height: 370px;
+        height: 370px;
     }
     .avatar {
         width: 100px;
@@ -447,6 +457,10 @@ body {
     .logo {
         width: 138px;
         height: 30px;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
     }
 
     @media only screen and (max-width: 1024px) {
